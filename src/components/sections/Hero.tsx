@@ -4,6 +4,8 @@ import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import TypewriterAnimation from '../ui/TypewriterAnimation';
 import AnimatedButton from '../ui/AnimatedButton';
 import mep from '../../assets/mep.png'
+import resume from '../../assets/Apeksha_Rathgalle_resume.pdf'
+
 const Hero: React.FC = () => {
   const typewriterTexts = [
     "Hi, I'm Apeksha Rathgalle",
@@ -94,19 +96,21 @@ const Hero: React.FC = () => {
                 View Projects
               </AnimatedButton>
               <AnimatedButton
-                variant="outline"
-                size="lg"
-                icon={Download}
-                onClick={() => {
-                  // Simulate CV download
-                  const link = document.createElement('a');
-                  link.href = '#';
-                  link.download = 'Alex_Chen_Resume.pdf';
-                  link.click();
-                }}
-              >
-                Download CV
-              </AnimatedButton>
+  variant="outline"
+  size="lg"
+  icon={Download}
+  onClick={() => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'Apeksha_Rathgalle_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  Download CV
+</AnimatedButton>
             </motion.div>
           </motion.div>
 
