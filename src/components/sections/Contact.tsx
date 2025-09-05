@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: contactInfo.phone || '+1 (555) 123-4567',
+      value: contactInfo.phone || '+94 70 266 0480',
       href: `tel:${contactInfo.phone}`,
       copyValue: contactInfo.phone,
       gradient: 'from-green-500 to-green-600',
