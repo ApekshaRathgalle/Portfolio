@@ -261,11 +261,11 @@ const UIUXProjects: React.FC = () => {
 
                   <div>
                     <motion.h3 
-                      className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300 mb-4"
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      {project.title}
-                    </motion.h3>
+  className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300 mb-4"
+  whileHover={{ scale: 1.02 }}
+>
+  {project.title}
+</motion.h3>
                     <motion.p 
                       className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6 transition-colors duration-300"
                       whileHover={{ x: 4 }}

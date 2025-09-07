@@ -28,10 +28,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const saved = localStorage.getItem('theme') as Theme;
     if (saved) return saved;
     
-    // Check system preference
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
+    // Default to light mode (removed system preference check)
     return 'light';
   });
 
@@ -48,7 +45,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  // Listen for system theme changes
+  // Optional: Listen for system theme changes (but don't auto-apply them)
+  // This is commented out since you want light mode as default
+  /*
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     
@@ -61,6 +60,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
+  */
 
   const toggleTheme = () => {
     setTheme(prev => prev === 'light' ? 'dark' : 'light');
