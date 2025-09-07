@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
         >
           <motion.h2
             variants={cardVariants}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 relative"
           >
             Featured <span className="text-emerald-600">Projects</span>
           </motion.h2>
