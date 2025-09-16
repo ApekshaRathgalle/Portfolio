@@ -3,8 +3,41 @@ import reccycle from '../assets/reccycle.png';
 import v from '../assets/v.png';
 import trend from '../assets/trend.png';
 import budgi from '../assets/budgi.jpg';
+import ele from '../assets/ele.png';
 
 export const uiuxProjects: Project[] = [
+  {
+    id: 'ELETRACK',
+    title: 'Elephant Tracking System in Railway Corridors',
+    description: 'web app to facilitate elephant tracking in railway corridors',
+    longDescription: 'Developed a web application aimed at promoting elephant tracking in railway corridors through user education, real-time tracking, and data collection.',
+    technologies: ['Figma', 'Miro' ],
+    features: [
+      'User research & interviews',
+      'Persona development',
+      'Information architecture',
+      'Wireframing & prototyping',
+      'Visual design system',
+      'Usability testing',
+      'Design handoff',
+      'Post-launch analysis'
+    ],
+    challenges: [
+      'Educating users on elephant tracking importance',
+      'Designing for diverse user demographics',
+      'Integrating real-time location services'
+    ],
+    solutions: [
+      'Created engaging educational content',
+      'Developed simple, intuitive UI',
+      'Utilized Google Maps API for location features'  
+    ],
+    imageUrl: ele,
+    demoUrl: 'https://www.figma.com/design/1xBIfHSXTViFvSme8Z0hXB/ELETRACK?node-id=0-1&t=WYSdQydu38KBI7Wr-1',
+    category: 'uiux',
+    featured: true,
+    timeline: '2 weeks'
+  },
   {
     id: 'e-waste-recycling-app',
     title: 'E-Waste Recycling App',
@@ -128,7 +161,7 @@ export const uiuxProjects: Project[] = [
       'Simplified user flows without sacrificing features'
     ],
     imageUrl: budgi,
-    demoUrl: 'https://figma.com/proto/dashboard-example',
+    demoUrl: 'https://vimeo.com/1118974351?share=copy',
     category: 'uiux',
     featured: false,
     timeline: '2 months'
