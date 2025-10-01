@@ -29,6 +29,11 @@ export const skills: Skill[] = [
   { name: 'Android Studio', level: 80, category: 'tools', icon: 'Inbox' },
   { name: 'Eclipse IDE', level: 75, category: 'tools', icon: 'Laptop' },
   { name: 'VS Code', level: 90, category: 'tools', icon: 'Terminal' },
+  { name: 'Adobe Illustrator', level: 85, category: 'tools', icon: 'PenTool' },
+  { name: 'Adobe Photoshop', level: 80, category: 'tools', icon: 'Image' },
+  { name: 'Canva', level: 90, category: 'tools', icon: 'Palette' },
+  { name: 'Sketch', level: 75, category: 'tools', icon: 'Pen' },
+  { name: 'Miro', level: 85, category: 'tools', icon: 'Layers' },
 
   // Soft Skills
   { name: 'Problem Solving', level: 95, category: 'soft', icon: 'Lightbulb' },

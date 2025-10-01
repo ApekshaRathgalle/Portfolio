@@ -204,18 +204,7 @@ const About: React.FC = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3, type: "spring", stiffness: 300 }}
             >
-              <AnimatedButton
-                variant="primary"
-                icon={MapPin}
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '#';
-                  link.download = 'Alex_Chen_Resume.pdf';
-                  link.click();
-                }}
-              >
-                Download Full Resume
-              </AnimatedButton>
+              
             </motion.div>
           </motion.div>
 

@@ -99,6 +99,7 @@ const Hero: React.FC = () => {
   variant="outline"
   size="lg"
   icon={Download}
+  disabled={true}
   onClick={() => {
     // Create a link element and trigger download
     const link = document.createElement('a');

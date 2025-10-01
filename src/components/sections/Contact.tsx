@@ -19,10 +19,9 @@ const Contact: React.FC = () => {
     },
     {
       icon: Phone,
-      label: 'Phone',
-      value: contactInfo.phone || '+94 70 266 0480',
-      href: `tel:${contactInfo.phone}`,
-      copyValue: contactInfo.phone,
+      label: 'WhatsApp',
+      value: 'Message me on WhatsApp',
+      href: `https://wa.me/94702660480`, 
       gradient: 'from-green-500 to-green-600',
       color: 'text-green-500 dark:text-green-400'
     },
