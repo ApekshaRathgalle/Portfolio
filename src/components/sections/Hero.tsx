@@ -38,8 +38,7 @@ const Hero: React.FC = () => {
                 transition={{ delay: 1, duration: 0.6 }}
                 className="text-xl text-gray-600 max-w-lg leading-relaxed"
               >
-                Crafting digital experiences that blend innovative technology with intuitive design. 
-                Passionate about creating solutions that make a difference.
+                Trainee wordpress Developer - Do Academy.
               </motion.p>
             </div>
 
@@ -99,7 +98,6 @@ const Hero: React.FC = () => {
   variant="outline"
   size="lg"
   icon={Download}
-  disabled={true}
   onClick={() => {
     // Create a link element and trigger download
     const link = document.createElement('a');
