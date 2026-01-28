@@ -34,6 +34,11 @@ export const skills: Skill[] = [
   { name: 'Canva', level: 90, category: 'tools', icon: 'Palette' },
   { name: 'Sketch', level: 75, category: 'tools', icon: 'Pen' },
   { name: 'Miro', level: 85, category: 'tools', icon: 'Layers' },
+  {name: 'Postman', level: 80, category: 'tools', icon: 'Box' },
+  {name: 'Maya', level: 70, category: 'tools', icon: 'Cube' },
+  { name: 'Blender', level: 70, category: 'tools', icon: 'Cube' },
+  {name: 'Unity', level: 75, category: 'tools', icon: 'Gamepad' },  
+  {name: 'Unreal Engine', level: 70, category: 'tools', icon: 'Cpu' },
 
   // Soft Skills
   { name: 'Problem Solving', level: 95, category: 'soft', icon: 'Lightbulb' },
