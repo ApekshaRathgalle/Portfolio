@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 transition={{ delay: 1, duration: 0.6 }}
                 className="text-xl text-gray-600 max-w-lg leading-relaxed"
               >
-                Trainee Software Developer | Game Developer | 3D Artist | UI/UX Designer 
+                Fullstack Developer 
               </motion.p>
             </div>
 
