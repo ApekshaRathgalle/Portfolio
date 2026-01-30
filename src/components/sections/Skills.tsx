@@ -206,7 +206,7 @@ const Skills: React.FC = () => {
     );
   };
 
-  // Component for soft skills (keep the original style with progress)
+  // Component for soft skills (without percentages)
   const SoftSkillItem: React.FC<{ skill: typeof skills[0]; index: number }> = ({ skill, index }) => {
     const IconComponent = (LucideIcons as any)[skill.icon] || LucideIcons.Code2;
     
@@ -215,7 +215,7 @@ const Skills: React.FC = () => {
         variants={itemVariants}
         className="group relative"
       >
-        <div className="flex items-center justify-between py-4 px-6 rounded-2xl 
+        <div className="flex items-center py-4 px-6 rounded-2xl 
                        bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm
                        border border-gray-200/50 dark:border-gray-700/50
                        hover:bg-white/80 dark:hover:bg-gray-800/80
@@ -223,81 +223,22 @@ const Skills: React.FC = () => {
                        transition-all duration-300 cursor-pointer
                        hover:shadow-lg hover:shadow-emerald-500/10 dark:hover:shadow-emerald-400/10">
           
-          <div className="flex items-center space-x-4 flex-1">
-            <motion.div
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30
-                        flex items-center justify-center
-                        group-hover:bg-emerald-200 dark:group-hover:bg-emerald-800/50
-                        transition-colors duration-300"
-            >
-              <IconComponent className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-            </motion.div>
-            
-            <div className="flex-1">
-              <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 
-                           group-hover:text-emerald-600 dark:group-hover:text-emerald-400
-                           transition-colors duration-300">
-                {skill.name}
-              </h4>
-            </div>
-          </div>
-
-          <div className="flex items-center space-x-3">
-            <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-              {skill.level}%
-            </span>
-            
-            <div className="relative w-12 h-12">
-              <svg className="w-12 h-12 transform -rotate-90" viewBox="0 0 48 48">
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  className="text-gray-200 dark:text-gray-700"
-                />
-                <motion.circle
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeLinecap="round"
-                  className="text-emerald-500 dark:text-emerald-400"
-                  initial={{ pathLength: 0 }}
-                  whileInView={{ pathLength: skill.level / 100 }}
-                  viewport={{ once: true }}
-                  transition={{ 
-                    duration: 1.5, 
-                    delay: index * 0.1,
-                    ease: "easeOut"
-                  }}
-                  style={{
-                    strokeDasharray: "125.66",
-                    strokeDashoffset: "125.66"
-                  }}
-                />
-              </svg>
-              
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ 
-                  duration: 0.3, 
-                  delay: 1 + index * 0.1,
-                  type: "spring",
-                  stiffness: 400
-                }}
-                className="absolute inset-0 flex items-center justify-center"
-              >
-                <div className="w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400" />
-              </motion.div>
-            </div>
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            className="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/30
+                      flex items-center justify-center
+                      group-hover:bg-emerald-200 dark:group-hover:bg-emerald-800/50
+                      transition-colors duration-300"
+          >
+            <IconComponent className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+          </motion.div>
+          
+          <div className="flex-1 ml-4">
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 
+                         group-hover:text-emerald-600 dark:group-hover:text-emerald-400
+                         transition-colors duration-300">
+              {skill.name}
+            </h4>
           </div>
         </div>
 
